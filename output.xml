@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.1 (Python 3.11.4 on win32)" generated="20230726 22:38:07.659" rpa="false" schemaversion="4">
+<robot generator="Robot 6.1 (Python 3.11.4 on win32)" generated="20230802 20:52:04.727" rpa="false" schemaversion="4">
 <suite id="s1" name="Panelscout Robotframework" source="F:\Github\panelscout_robotframework">
 <suite id="s1-s1" name="Test Login Rf" source="F:\Github\panelscout_robotframework\test_login_rf.robot">
 <test id="s1-s1-t1" name="Leangue Change" line="51">
@@ -8,49 +8,49 @@
 <arg>${LOGIN URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230726 22:38:07.784" level="INFO">Opening browser 'Chrome' to base url 'https://scouts-test.futbolkolektyw.pl/en/login?redirected=true'.</msg>
-<status status="PASS" starttime="20230726 22:38:07.784" endtime="20230726 22:38:10.615"/>
+<msg timestamp="20230802 20:52:04.852" level="INFO">Opening browser 'Chrome' to base url 'https://dareit.futbolkolektyw.pl/en/login?redirected=true'.</msg>
+<status status="PASS" starttime="20230802 20:52:04.852" endtime="20230802 20:52:06.536"/>
 </kw>
-<status status="PASS" starttime="20230726 22:38:07.784" endtime="20230726 22:38:10.615"/>
+<status status="PASS" starttime="20230802 20:52:04.852" endtime="20230802 20:52:06.536"/>
 </kw>
 <kw name="Click Leangue button">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${CHANGELEANGUE}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230726 22:38:10.616" level="INFO">Clicking element 'xpath=*//*[@id="__next"]/form/div/div[2]/div/div'.</msg>
-<status status="PASS" starttime="20230726 22:38:10.615" endtime="20230726 22:38:10.647"/>
+<msg timestamp="20230802 20:52:06.537" level="INFO">Clicking element 'xpath=*//*[@id="__next"]/form/div/div[2]/div/div'.</msg>
+<status status="PASS" starttime="20230802 20:52:06.536" endtime="20230802 20:52:06.567"/>
 </kw>
-<status status="PASS" starttime="20230726 22:38:10.615" endtime="20230726 22:38:10.647"/>
+<status status="PASS" starttime="20230802 20:52:06.536" endtime="20230802 20:52:06.568"/>
 </kw>
 <kw name="Change To Polish">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${POLISHLEANGUE}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230726 22:38:10.647" level="INFO">Clicking element 'xpath=//*[@id='menu-']/div[3]/ul/li[1]'.</msg>
-<status status="PASS" starttime="20230726 22:38:10.647" endtime="20230726 22:38:10.684"/>
+<msg timestamp="20230802 20:52:06.568" level="INFO">Clicking element 'xpath=//*[@id='menu-']/div[3]/ul/li[1]'.</msg>
+<status status="PASS" starttime="20230802 20:52:06.568" endtime="20230802 20:52:06.605"/>
 </kw>
-<status status="PASS" starttime="20230726 22:38:10.647" endtime="20230726 22:38:10.684"/>
+<status status="PASS" starttime="20230802 20:52:06.568" endtime="20230802 20:52:06.605"/>
 </kw>
 <kw name="Assert Polish">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${ZALOGUJ}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<msg timestamp="20230726 22:38:15.749" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20230726 22:38:15.749" level="FAIL">Element 'xpath=//*[contains(text(),'zaloguj')]' not visible after 5 seconds.</msg>
-<status status="FAIL" starttime="20230726 22:38:10.684" endtime="20230726 22:38:15.750"/>
+<msg timestamp="20230802 20:52:11.675" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230802 20:52:11.675" level="FAIL">Element 'xpath=//*[contains(text(),'zaloguj')]' not visible after 5 seconds.</msg>
+<status status="FAIL" starttime="20230802 20:52:06.605" endtime="20230802 20:52:11.676"/>
 </kw>
-<status status="FAIL" starttime="20230726 22:38:10.684" endtime="20230726 22:38:15.750"/>
+<status status="FAIL" starttime="20230802 20:52:06.605" endtime="20230802 20:52:11.676"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20230726 22:38:15.750" endtime="20230726 22:38:17.801"/>
+<status status="PASS" starttime="20230802 20:52:11.677" endtime="20230802 20:52:13.744"/>
 </kw>
-<status status="FAIL" starttime="20230726 22:38:07.783" endtime="20230726 22:38:17.801">Element 'xpath=//*[contains(text(),'zaloguj')]' not visible after 5 seconds.</status>
+<status status="FAIL" starttime="20230802 20:52:04.852" endtime="20230802 20:52:13.744">Element 'xpath=//*[contains(text(),'zaloguj')]' not visible after 5 seconds.</status>
 </test>
 <doc>Suite description #automated tests for scout website</doc>
-<status status="FAIL" starttime="20230726 22:38:07.671" endtime="20230726 22:38:17.802"/>
+<status status="FAIL" starttime="20230802 20:52:04.740" endtime="20230802 20:52:13.745"/>
 </suite>
-<status status="FAIL" starttime="20230726 22:38:07.659" endtime="20230726 22:38:17.803"/>
+<status status="FAIL" starttime="20230802 20:52:04.728" endtime="20230802 20:52:13.746"/>
 </suite>
 <statistics>
 <total>
@@ -64,6 +64,6 @@
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20230726 22:38:07.671" level="ERROR">Error in file 'F:\Github\panelscout_robotframework\test_login_rf.robot' on line 95: Creating keyword 'Setup system under test' failed: User keyword cannot be empty.</msg>
+<msg timestamp="20230802 20:52:04.740" level="ERROR">Error in file 'F:\Github\panelscout_robotframework\test_login_rf.robot' on line 96: Creating keyword 'Setup system under test' failed: User keyword cannot be empty.</msg>
 </errors>
 </robot>

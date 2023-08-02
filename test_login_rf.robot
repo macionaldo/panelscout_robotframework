@@ -5,12 +5,12 @@ Library  SeleniumLibrary
 Documentation    Suite description #automated tests for scout website
 
 *** Variables ***
-${LOGIN URL}      https://scouts-test.futbolkolektyw.pl/en/login?redirected=true
+${LOGIN URL}      https://dareit.futbolkolektyw.pl/en/login?redirected=true
 ${BROWSER}        Chrome
 ${SIGNINBUTTON}     xpath=//*[@id="__next"]/form/div/div[2]/button/span[1]
 ${LOGGINFIELD}      xpath=//*[@id='login']
 ${PASSWORDFIELD}        xpath=//*[@id='password']
-${ADDPLAYER}        xpath=//*[@id='__next']/div[1]/main/div[3]/div[2]/div/div/a/button
+${ADDPLAYER}        xpath=//*[@id="__next"]/div[1]/main/div[3]/div[2]/div/div/a/button/span[1]
 ${WRONGLOGIN}       xpath=//*[@id="__next"]/form/div/div[1]/div[3]/span
 ${CHANGELEANGUE}    xpath=*//*[@id="__next"]/form/div/div[2]/div/div
 ${POLISHLEANGUE}    xpath=//*[@id='menu-']/div[3]/ul/li[1]
@@ -62,6 +62,7 @@ Add Player
     Click on the Sumbit button
     Assert dashboard
     Click on Add Player
+    Assert Dashboard Player
     Add Name
     Add Surname
     Add Age
@@ -105,13 +106,16 @@ Click on Add Player
 Add Name
     Input Text    ${ADDNAME}    Krzychu
 Add Surname
-    Input Text    ${ADDSURNAME} Piącha
+    Input Text    ${ADDSURNAME}     Piącha
 Add Age
-    Input Text    ${ADDAGE} 12121995
+    Input Text    ${ADDAGE}     12121995
 Add Position
-    Input Text    ${ADDPOSITION} NAPASTNIK
+    Input Text    ${ADDPOSITION}    NAPASTNIK
 Submit Player
     Click Element    ${SUBMITPLAYER}
+
+Assert Dashboard Player
+    Wait Until Element Is Visible    ${ADDNAME}
 
 
 
